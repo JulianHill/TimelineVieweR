@@ -5,7 +5,8 @@ TwitterTimeline <- function(username,no)
 
   
   #authentication
-  load("auth.Rda")
+  download.file("http://timelineviewer.bplaced.net/","auth.rda")
+  load(auth.rda)
   registerTwitterOAuth(twitCred)
   
   
