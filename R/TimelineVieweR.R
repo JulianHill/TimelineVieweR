@@ -1,6 +1,8 @@
 TwitterTimeline <- function(username,no)
 {
   require(twitteR)
+  require(rCharts)
+
   
   #authentication
   load("auth.Rda")
@@ -20,7 +22,7 @@ TwitterTimeline <- function(username,no)
     df$text = tweets$text
     df$interactions = tweets$retweetCount+tweets$favoriteCount
     df$date = substr(tweets$created, 1, 19)  
-  df$ids = tweets$id
+    df$ids = tweets$id
 
     
  #add media
