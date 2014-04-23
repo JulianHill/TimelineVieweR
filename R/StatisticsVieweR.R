@@ -5,7 +5,8 @@ Wordcount  <- function(username, no)
   require(tm)
   
   #authentication
-  load("auth.Rda")
+  #load("auth.Rda")
+  data(auth, envir=environment())
   registerTwitterOAuth(twitCred)
   
   
