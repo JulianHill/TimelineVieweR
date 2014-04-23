@@ -6,7 +6,7 @@ TwitterTimeline <- function(username,no)
   
   #authentication
   
-  load("R/auth.Rda")
+ 
   registerTwitterOAuth(twitCred)
   
   
