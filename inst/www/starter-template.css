@@ -1,0 +1,51 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.center{
+width: 150px;
+  margin: 40px auto;
+  
+}
+
+/* Footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 20%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 20px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 10;
+  background: 
+ 
+    /* image to overlay */
+    url(footer.png);
+}
+
+
+/* Custom footer CSS
+-------------------------------------------------- */
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+.footertext {
+  color: #ffffff;
+}
