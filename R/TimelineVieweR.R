@@ -110,7 +110,7 @@ TwitterTimeline <- function(username,no)
   
   # Modify JS Path to use Local Assets
   x <- paste(readLines('index.html', warn = F), collapse = '\n')
-  x <- gsub('/Library/Frameworks/R.framework/Versions/3.0/Resources/library/rCharts/libraries/timeline', 'compiled', x)
+  x <- gsub('https://github.com/JulianHill/TimelineVieweR/tree/master/', 'compiled', x)
   writeLines(x, con = 'index.html')
   
   # Browse Page
