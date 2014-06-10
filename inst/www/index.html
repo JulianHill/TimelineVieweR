@@ -159,7 +159,7 @@
 <script type="text/javascript">//<![CDATA[ 
 window.onload=function(){
 //set CORS to call "appdemo" package on public server
-ocpu.seturl("http://public.opencpu.org/ocpu/github/JulianHill/SentimentClassR/R")
+//ocpu.seturl("http://public.opencpu.org/ocpu/github/JulianHill/SentimentClassR/R")
 
 //global var
 var mysession;
@@ -200,9 +200,7 @@ var number = currentVal;
        $("#loading").hide()
        $("#output").attr('src', session.getLoc() + "files/index.html");  
        $("#download").show()
-       $scope.$apply(function(){
-         $scope.dnlink = session.getLoc() + "files/index.html"
-       })
+       
      }).fail(function(text){
       alert("Error: " + req.responseText);
      });

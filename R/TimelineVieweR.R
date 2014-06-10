@@ -112,7 +112,12 @@ TwitterTimeline <- function(username,no)
   x <- paste(readLines('index.html', warn = F), collapse = '\n')
   x <- gsub('/Library/Frameworks/R.framework/Versions/3.0/Resources/library/rCharts/libraries/timeline', 'compiled', x)
   writeLines(x, con = 'index.html')
-  
+ 
+ x <- paste(readLines('index.html', warn = F), collapse = '\n')
+ x <- gsub('compiled/js/storyjs-embed.js', 'http://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js', x)
+ writeLines(x, con = 'index.html')
+ 
+ 
   # Browse Page
   # browseURL('index.html')
   
